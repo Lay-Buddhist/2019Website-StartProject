@@ -1,0 +1,565 @@
+/*index common start*/
+@media screen and (min-width: 500px) {
+    .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9
+    ,.col-sm-10,.col-sm-11,.col-sm-12 {
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .col-sm-1 {
+        width: 8.333333%;
+    }
+    .col-sm-2 {
+        width: 16.66667%;
+    }
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+        width: 33.333333%;
+    }
+    .col-sm-5 {
+        width: 41.6666667%;
+    }
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-7 {
+        width: 58.33333%;
+    }
+    .col-sm-8 {
+        width:66.66666667%;
+    }
+    .col-sm-9 {
+        width: 75%;
+    }
+    .col-sm-10 {
+        width: 83.33333%;
+    }
+    .col-sm-11 {
+        width: 91.66666667%;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+.btn-xl {
+    color: #ffffff;
+    background-color: #fed136;
+    border-color: #fed136;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 20px 40px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+
+}
+@font-face {
+    font-family: 'iconfont';  /* project id 1015070 */
+    src: url('//at.alicdn.com/t/font_1015070_rnfmlvwbl7.eot');
+    src: url('//at.alicdn.com/t/font_1015070_rnfmlvwbl7.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1015070_rnfmlvwbl7.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1015070_rnfmlvwbl7.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1015070_rnfmlvwbl7.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1015070_rnfmlvwbl7.svg#iconfont') format('svg');
+}
+/*twitter + facebook + linkdin*/
+@font-face {
+    font-family: 'iconfont';  /* project id 1019478 */
+    src: url('//at.alicdn.com/t/font_1019478_6cmua2y40r6.eot');
+    src: url('//at.alicdn.com/t/font_1019478_6cmua2y40r6.eot?#iefix') format('embedded-opentype'),
+    url('//at.alicdn.com/t/font_1019478_6cmua2y40r6.woff2') format('woff2'),
+    url('//at.alicdn.com/t/font_1019478_6cmua2y40r6.woff') format('woff'),
+    url('//at.alicdn.com/t/font_1019478_6cmua2y40r6.ttf') format('truetype'),
+    url('//at.alicdn.com/t/font_1019478_6cmua2y40r6.svg#iconfont') format('svg');
+}
+/*index common end*/
+
+
+/*header start*/
+header {
+    position: relative;
+    height: 100%;
+    background: url("../images/header-bg.jpg");
+    background-size: cover;
+}
+
+.navbar .logo {
+    float: left;
+    color: #fec503;
+    margin-left: -15px;
+    font-size: 2em;
+    padding: 15px 15px;
+}
+.navbar nav {
+    float: right;
+    margin-top: 20px;
+}
+.nav > li {
+    float: left;
+}
+/*
+总结下a标签点击没反应的情况
+1： a标签被盖住了 根本点不到a标签所以自然没有反应
+比如我刚才加了遮罩层 就没反应
+2：a标签的href等属性写错了
+3：a标签的事件冲突
+*/
+.nav > li  .item {
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #ffffff;
+    padding: 15px 15px;
+    transition: all  0.5s linear;
+    cursor: pointer;
+}
+.nav > li .item:hover {
+    color: #fed136;
+}
+.head-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    padding-top: 12%;
+}
+.head-intro h2 {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+.head-intro h1 {
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 75px;
+    margin-bottom: 50px;
+    color: #ffffff;
+}
+/*header end*/
+
+
+/*services start*/
+section {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 150px;
+}
+.section > h2 {
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.section > p {
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    /*斜体的意思*/
+    font-weight: 400;
+    margin-bottom: 75px;
+    margin-top: 20px;
+}
+.sections > ul {
+    margin-top: 50px;
+}
+.sections > ul > li {
+    padding: 10px 20px;
+    float: left;
+    width: 33.3%;
+}
+.services > ul .iconfont{
+    width:80px;
+    height: 80px;
+    display: inline-block;
+    position:relative;
+    background-color: rgb(254,209,54);
+    border-radius: 50%;
+    transition: all 0.5s linear;
+}
+.services > ul .iconfont:hover {
+    background-color: rgba(254,209,54,.5);
+}
+.services > ul .iconfont::after {
+    display: inline-block;
+    color: #ffffff;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: normal;
+    line-height: 80px;
+    position: absolute;
+    font-family:"iconfont" !important;
+    font-size:35px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.services > ul .icon-ecommerce::before {
+    content: "";
+}
+.services > ul .icon-Design::before {
+    content: "";
+}
+.services > ul .icon-security::before {
+    content: "";
+}
+.services > ul .icon-ecommerce::after {
+    content: "\e625";
+}
+.services > ul .icon-Design::after {
+    content: "\e63d";
+}
+.services > ul .icon-security::after {
+    content: "\e661";
+}
+.section > ul h3 {
+    margin-top: 20px;
+}
+.section > ul p {
+    margin-top: 20px;
+}
+#container {
+    background-color: #fff;
+}
+
+/*portflolo start*/
+#portfolo {
+    background-color: rgb(247,247,247);
+}
+section .portfolo .ports{
+    margin: 20px;
+}
+section .portfolo .ports-item {
+    width: 30%;
+    background-color: #fff;
+    float: left;
+    margin: 20px 20px;
+}
+section .portfolo a {
+    position: relative;
+    display: inline-block;
+}
+section .portfolo .ports-hover {
+    background: rgba(254, 209, 54, .9);
+    position: absolute;
+    width: 100%;
+    height: 98.5%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    transition: all 0.4s linear;
+}
+.ports-hover-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section .portfolo .ports-hover-content::after {
+    text-align: center;
+    content: "\e63c";
+    display: block;
+    opacity: 1;
+    line-height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color:rgba(255,255,255,.7);
+    transform: translate(-50%,-50%);
+    font-family:"iconfont" !important;
+    font-size:50px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+section .portfolo a:hover .ports-hover{
+    opacity: 1;
+    color: #ffffff;
+}
+section .portfolo img {
+    width: 100%;
+    height: 300px;
+}
+section .portfolo figcaption {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+section .ports-item p {
+    margin:  10px 0;
+    margin-bottom: 30px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 16px;
+    color: #777;
+
+}
+
+/*about start*/
+#about {
+    background-color: #fff;
+}
+section .about img,
+section .about .img {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 3px solid lightblue;
+}
+section .about .img {
+    padding-top: 35px;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.about .about-con > li {
+    margin-top: 60px;
+    padding-right:calc(50% - 85px);
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+.about .about-con > li:last-child::before {
+    display: none;
+}
+.about-con > li:nth-last-child(1) > .img{
+    background-color: rgb(254,209,54);
+}
+.about .about-con > li::before{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 90px;
+    background: lightblue;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-left: -2px;
+    z-index: 1;
+}
+.about .about-con > li::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*问题2对齐*/
+.about .about-con  dl {
+    margin-right: 190px;
+    padding-top: 25px;
+}
+.about .about-con > li:nth-child(odd) img {
+    float: right;
+}
+.about .about-con > li:nth-child(even) img{
+    float: left;
+}
+.about .about-con > li:nth-child(even) {
+    padding-left: calc(50% - 85px);
+    padding-right: 0;
+    text-align: left;
+}
+.about .about-con > li:nth-child(even) dl {
+    margin-left: 190px;
+    margin-right: 0;
+}
+.about .about-con dt {
+    font-weight:bold;
+    font-size: 16px;
+}
+.about .about-con dd:nth-of-type(1) {
+    color: #666;
+    margin-top: 10px;
+}
+/*about end*/
+
+/*team start*/
+#team {
+    background-color: rgb(247,247,247);
+}
+.team .team-con {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.team-con .team-item {
+    width: 18.3%;
+    position: relative;
+}
+.team .team-con .team-item img{
+    width: 100%;
+    border: 7px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    height: 220px;
+}
+.team-con .team-item > h3 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+}
+.team-con .team-item > p {
+    color: #777;
+    font-size: 14px;
+    margin:  0 0 10px;
+}
+.contact {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.contact > a {
+    display: block;
+    position: relative;
+    background-color: #222;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 40px;
+    color: #ffffff;
+    outline: 0;
+    transition:  all 0.3s ;
+}
+.contact > a::before {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:"iconfont" !important;
+    font-size:22px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.contact > a:nth-child(1)::before {
+    content: "\e65f";
+}
+.contact > a:nth-child(2)::before {
+    content: "\e61b";
+}
+.contact > a:nth-child(3)::before {
+    content: "\e603";
+}
+.contact > a:hover {
+    background-color: rgb(254,209,54);
+}
+.team > i {
+    line-height: 1.75;
+    color: #777;
+    font-size: 16px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    font-style: normal;
+}
+/*team end*/
+
+
+
+/*us start*/
+#us {
+    background: url("../images/map-image.png") center center no-repeat;
+    background-color: #222;
+    color: #ffffff;
+}
+.us-contact .form-group {
+    margin-bottom: 20px;
+}
+.us-row {
+    margin-bottom: 35px;
+}
+.us-row  .form-control{
+    padding: 20px;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    font-weight: 700;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    cursor: text;
+}
+.us-row .form-control:focus {
+    outline:none;
+    border-color: #fed136;
+}
+.us-message .form-text #message {
+    height: 225px;
+    width: 100%;
+}
+.us-row .form-control::-webkit-input-placeholder {
+    font-weight: bold;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.us-row .form-control::-moz-placeholder {
+    font-weight: bold;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.us-row .form-control:-ms-input-placeholder {
+    font-weight: bold;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.us-message .form-text textarea:focus {
+    outline: none;
+    border-color: #fed136;
+}
+/*us end*/
+
+/*footer start*/
+footer {
+    padding: 20px 0 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+footer > .contact {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px ;
+}
+footer > p {
+    color: #777777;
+}
+footer .contact  a{
+    color: #ffffff;
+}
+footer > .privacy > a {
+    color: #fed136;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+footer > .privacy > a:hover {
+    color: coral;
+    text-decoration: underline;
+}
+/*footer end*/
+
+
